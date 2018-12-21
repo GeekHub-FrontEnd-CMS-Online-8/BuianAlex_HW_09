@@ -1,0 +1,38 @@
+.col4-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li{
+    width: 100%;
+  }
+}
+@media (min-width: 576px) { 
+  .col4-flex{
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+    li{
+      width: 50%;
+    }
+  }   
+}
+@media (min-width: 992px) {
+  .col4-flex{
+    justify-content: space-around;
+    align-items: stretch;
+    li{
+      width:33.333%;
+    }
+  }   
+}
+@media (min-width: 1200px) {
+  .col4-flex{
+    justify-content: space-between;
+    align-items: stretch;
+    li{
+      width: 25%;
+    }
+  }   
+}
